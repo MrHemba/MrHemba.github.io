@@ -1,17 +1,16 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Web & Product Designer",
-		"company": "Company Name",
-		"description": "Leading the design of user-centric web applications and dating platforms.",
+		"dates": "Reciente",
+		"role": "Frontend Developer",
+		"company": "Freelance",
+		"description": "Desarrollo de soluciones web y móviles con un enfoque en la optimización de procesos y experiencia de usuario.",
 		"logo": "/assets/experiences/company.jpg"
 	},
 	{
-		"dates": "July 2016 · June 2017",
-		"role": "Web & Product Designer",
-		"company": "Company Name",
-		"description": "Spearheaded the design and development of e-commerce websites and online marketplaces.",
+		"dates": "Proyecto TriciTrace",
+		"role": "Software Developer",
+		"company": "TriciTrace",
+		"description": "Desarrollo integral de una plataforma de movilidad con implementación de Geofencing y seguimiento en tiempo real.",
 		"logo": "/assets/experiences/company.jpg"
 	}
-
 ]

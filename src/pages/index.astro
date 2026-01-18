@@ -11,9 +11,9 @@ import Explore from "@/components/sections/Explore.astro";
 ---
 
 <Layout
-title="Rico Portfolio Site 2025"
-description="Welcome to Rico's portfolio site! Explore my work as a web/UI designer with 8+ years of experience in creating captivating visuals and interactive experiences."
-keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative Designer"
+title="Portafolio de Anthony Hemba"
+description="¡Bienvenido a mi portafolio! Soy Anthony Hemba, desarrollador de software especializado en soluciones web y móviles. Explora mis proyectos y artículos."
+keywords="Anthony Hemba, Portafolio, Desarrollo Web, Desarrollo Móvil, Python, Software Developer"
 >
   <div
     class="relative site-container z-20  w-full mx-auto mt-16 px-4 md:mt-18 lg:mt-20 xl:px-0"
@@ -23,7 +23,7 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
         <!-- Title - AnimatedText animation -->
         <h1 class="mb-4">
           <AnimatedText
-            content="Hi, I'm Rico"
+            content="Hola, soy Anthony Hemba"
             delay={0.1}
             duration={0.5}
             stagger={0.08}
@@ -34,7 +34,7 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
         <!-- First description - AnimatedText animation -->
         <div class="mb-2">
           <AnimatedText
-            content="I'm a web/UI designer with 8+ years of experience. I love blending design and code to create captivating visuals and interactive experiences."
+            content="Soy un desarrollador de software apasionado por la creación de sistemas que impactan el mundo real. Me especializo en soluciones web y móviles."
             delay={0.3}
             duration={0.5}
             stagger={0.015}
@@ -45,7 +45,7 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
         <!-- Second description - AnimatedText animation -->
         <div class="mb-4">
           <AnimatedText
-            content="I believe great design should be both delightful and solve real-world challenges."
+            content="Transformando necesidades locales en soluciones tecnológicas eficientes."
             delay={0.5}
             duration={0.5}
             stagger={0.015}
@@ -61,8 +61,8 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
           data-aos-duration="500"
           data-aos-once="true"
         >
-          <Button url={siteConfig.social.twitter} type="fill" className="m-auto mt-4 text-center sm:text-left sm:m-0 sm:mt-6 max-w-[200px]">
-            Follow me on 𝕏
+          <Button url={siteConfig.social.github} type="fill" className="m-auto mt-4 text-center sm:text-left sm:m-0 sm:mt-6 max-w-[200px]">
+            Ver mi GitHub
           </Button>
         </div>
 
@@ -87,9 +87,9 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
         data-aos-once="true"
       >
         <HeroCard
-          imageUrl="/assets/home/gradientshub.jpg"
-          title="Gradientshub"
-          link="https://gradientshub.com"
+          imageUrl="/assets/social/social-github.jpg"
+          title="GitHub"
+          link="https://github.com/MrHemba"
         />
       </div>
     </div>
@@ -102,7 +102,7 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
     data-aos-duration="600"
     data-aos-once="true"
   >
-    <Explore title="Explore ↓"  />
+    <Explore title="Explorar ↓"  />
   </section>
 
   <section
@@ -112,7 +112,7 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
     data-aos-duration="600"
     data-aos-once="true"
   >
-    <FeaturedWork title="Featured Work ↓" description="I create innovative and purposeful designs that not only capture attention but also drive meaningful results." limit={5} />
+    <FeaturedWork title="Trabajos Destacados ↓" description="Creo diseños innovadores y con propósito que no solo captan la atención, sino que también generan resultados significativos." limit={5} />
   </section>
 
   <section
@@ -123,8 +123,8 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
     data-aos-once="true"
   >
     <BlogSection
-      title="Latest Articles  ↓"
-      description="These are my notes and articles on design, development and life thinking."
+      title="Últimos Artículos ↓"
+      description="Estas son mis notas y artículos sobre diseño, desarrollo y reflexiones sobre la vida."
       showViewAllButton={true}
     />
   </section>
