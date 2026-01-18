@@ -1,0 +1,214 @@
+
+> astro-rico-portfolio@1.0.0 build
+> astro check && astro build
+00:28:12 [vite] Re-optimizing dependencies because vite config has changed
+00:28:12 [content] Syncing content
+00:28:12 [content] Synced content
+00:28:12 [types] Generated 392ms
+00:28:12 [check] Getting diagnostics for Astro files in C:\Users\Mr_HeMbA\IdeaProjects\MrHemba.github.io...
+src/assets/js/main.js:174:8 - warning ts(2568): Property 'openMobileMenu' may not exist on type 'Window & typeof globalThis'. Did you mean 'closeMobileMenu'?
+174 window.openMobileMenu = () => {
+           ~~~~~~~~~~~~~~
+src/assets/js/main.js:2:17 - warning ts(7016): Could not find a declaration file for module 'aos'. 'C:/Users/Mr_HeMbA/IdeaProjects/MrHemba.github.io/node_modules/aos/dist/aos.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/aos` if it exists or add a new declaration (.d.ts) file containing `declare module 'aos';`
+2 import AOS from 'aos';
+                  ~~~~~
+src/components/cards/WorkCard.astro:22:3 - warning ts(6133): 'isShow' is declared but its value is never read.
+22   isShow = true,
+     ~~~~~~
+src/components/cards/WorkCard.astro:173:45 - warning ts(2570): Could not find name 'videoId'. Did you mean 'video'?
+173       const video = document.getElementById(videoId);
+                                                ~~~~~~~
+src/components/cards/WorkCard.astro:168:11 - warning astro(4000): This script will be treated as if it has the `is:inline` directive because it contains an attribute. Therefore, features that require processing (e.g. using TypeScript or npm packages in the script) are unavailable.
+See docs for more details: https://docs.astro.build/en/guides/client-side-scripts/#script-processing.
+Add the `is:inline` directive explicitly to silence this hint.
+168   <script define:vars={{ videoId }}>
+              ~~~~~~~~~~~
+src/components/sections/Explore.astro:4:1 - warning ts(6133): 'Button' is declared but its value is never read.
+4 import Button from "@/components/ui/Button.astro";
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/components/sections/Explore.astro:3:1 - warning ts(6133): 'Matter' is declared but its value is never read.
+3 import Matter from "@/components/ui/Matter.astro";
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/components/sections/Header.astro:2:10 - warning ts(6133): 'Mail' is declared but its value is never read.
+2 import { Mail, Moon, SunMedium,Download } from "@lucide/astro";
+           ~~~~
+src/pages/about.astro:10:2 - warning ts(6133): 'Zap' is declared but its value is never read.
+10  Zap,
+    ~~~
+src/pages/about.astro:9:2 - warning ts(6133): 'Smartphone' is declared but its value is never read.
+9  Smartphone,
+   ~~~~~~~~~~
+src/pages/about.astro:8:2 - warning ts(6133): 'Palette' is declared but its value is never read.
+8  Palette,
+   ~~~~~~~
+src/pages/about.astro:7:2 - warning ts(6133): 'Monitor' is declared but its value is never read.
+7  Monitor,
+   ~~~~~~~
+src/pages/about.astro:5:2 - warning ts(6133): 'Globe' is declared but its value is never read.
+5  Globe,
+   ~~~~~
+src/pages/about.astro:4:2 - warning ts(6133): 'Code' is declared but its value is never read.
+4  Code,
+   ~~~~
+src/pages/blog/[...slug].astro:26:7 - warning ts(6133): 'slugString' is declared but its value is never read.
+26 const slugString = Array.isArray(slug) ? slug.join('/') : (slug || '');
+         ~~~~~~~~~~
+Result (47 files):
+- 0 errors
+- 0 warnings
+- 15 hints
+00:28:18 [content] Syncing content
+00:28:18 [content] Synced content
+00:28:18 [types] Generated 330ms
+00:28:18 [build] output: "static"
+00:28:18 [build] mode: "static"
+00:28:18 [build] directory: C:\Users\Mr_HeMbA\IdeaProjects\MrHemba.github.io\dist\
+00:28:18 [build] Collecting build info...
+00:28:18 [build] ✓ Completed in 352ms.
+00:28:19 [build] Building static entrypoints...
+00:28:22 [vite] ✓ built in 3.65s
+00:28:22 [build] ✓ Completed in 3.68s.
+ building client (vite)
+00:28:23 [vite] ✓ 288 modules transformed.
+00:28:23 [vite] dist/_astro/Layout.astro_astro_type_script_index_0_lang.CCs8QUUs.js        18.18 kB │ gzip:  6.04 kB
+00:28:23 [vite] dist/_astro/AnimatedText.astro_astro_type_script_index_0_lang.DzrLn7Ew.js  59.79 kB │ gzip: 21.15 kB
+00:28:23 [vite] ✓ built in 355ms
+ generating static routes
+00:28:23 ▶ src/pages/404.astro
+00:28:23   └─ /404.html (+10ms)
+00:28:23 ▶ src/pages/about.astro
+00:28:23   └─ /about/index.html (+5ms)
+00:28:23 ▶ src/pages/blog/page/[page].astro
+00:28:23   ├─ /blog/page/1/index.html (+6ms)
+00:28:23   └─ /blog/page/2/index.html (+6ms)
+00:28:23 ▶ src/pages/blog/index.astro
+00:28:23   └─ /blog/index.html (+5ms)
+00:28:23 ▶ src/pages/blog/[...slug].astro
+00:28:23   ├─ /blog/design-style-guide-neo-brutalism/index.html (+23ms)
+00:28:23   ├─ /blog/design-style-guide-retro-and-vintage/index.html (+12ms)
+00:28:23   ├─ /blog/personal-website-selection-guide-for-designers/index.html (+10ms)
+00:28:23   ├─ /blog/the-aesthetics-of-time-dislocation-retro-futurism/index.html (+10ms)
+00:28:23   ├─ /blog/web-design-style-guide-brutalism/index.html (+7ms)
+00:28:23   ├─ /blog/what-have-i-developed-as-a-designer/index.html (+8ms)
+00:28:23   ├─ /blog/design-style-guide-spacepunk/index.html (+7ms)
+00:28:23   └─ /blog/top-14-free-icon-libraries-for-designers-and-developers/index.html (+7ms)
+00:28:23 λ src/pages/rss.xml.js
+00:28:23   └─ /rss.xml (+4ms)
+00:28:23 ▶ src/pages/works.astro
+00:28:23   └─ /works/index.html (+3ms)
+00:28:23 ▶ src/pages/index.astro
+00:28:23   └─ /index.html (+5ms)
+00:28:23 ✓ Completed in 192ms.
+ generating optimized images
+00:28:23   ▶ /_astro/01.DANWr99z_Z4K6wN.webp (reused cache entry) (+5ms) (1/107)
+00:28:23   ▶ /_astro/03.5nEl8ZEp_1xUrHU.webp (reused cache entry) (+5ms) (2/107)
+00:28:23   ▶ /_astro/02-neobrutalism.1uQ9IIxY_Z77wfg.webp (reused cache entry) (+5ms) (3/107)
+00:28:23   ▶ /_astro/04.DoIa2JXV_1cBreG.webp (reused cache entry) (+6ms) (4/107)
+00:28:23   ▶ /_astro/05.BrPAkxae_1mE0eo.webp (reused cache entry) (+6ms) (5/107)
+00:28:23   ▶ /_astro/06-sui-io-overflow.DAHwjfVL_Zrl3nG.webp (reused cache entry) (+6ms) (6/107)
+00:28:23   ▶ /_astro/07.BKR3iDFF_Z1CjWNx.webp (reused cache entry) (+6ms) (7/107)
+00:28:23   ▶ /_astro/08.CXeFk8Jb_Z2dNBR5.webp (reused cache entry) (+6ms) (8/107)
+00:28:23   ▶ /_astro/09-goodeatn.C5Kis2WM_Z11xM4L.webp (reused cache entry) (+6ms) (9/107)
+00:28:23   ▶ /_astro/12-brazilfox.C3Fz_uND_y7XTC.webp (reused cache entry) (+7ms) (10/107)
+00:28:23   ▶ /_astro/11-byooooob.iNsFfBPQ_Z26J81A.webp (reused cache entry) (+8ms) (11/107)
+00:28:23   ▶ /_astro/10-budapestpark-hu.COixmH_d_1Hpxux.webp (reused cache entry) (+8ms) (12/107)
+00:28:23   ▶ /_astro/14.RJ3s59ho_1eii9I.webp (reused cache entry) (+3ms) (13/107)
+00:28:23   ▶ /_astro/14.BgX4HOge_2cln1m.webp (reused cache entry) (+3ms) (14/107)
+00:28:23   ▶ /_astro/17.BohISXY2_woChj.webp (reused cache entry) (+2ms) (15/107)
+00:28:23   ▶ /_astro/16.-iAc9jhy_14CEBh.webp (reused cache entry) (+3ms) (16/107)
+00:28:23   ▶ /_astro/15-Berlin05-wki-tent.lMaW32us_2pP19i.webp (reused cache entry) (+3ms) (17/107)
+00:28:23   ▶ /_astro/01.DXBF-Ek3_Z247OyE.webp (reused cache entry) (+3ms) (18/107)
+00:28:23   ▶ /_astro/02.CWn0h33b_Z1V4dTU.webp (reused cache entry) (+4ms) (19/107)
+00:28:23   ▶ /_astro/03.DlOgwMi0_249Kja.webp (reused cache entry) (+4ms) (20/107)
+00:28:23   ▶ /_astro/04.CezbR1ME_Z12LrQq.webp (reused cache entry) (+3ms) (21/107)
+00:28:23   ▶ /_astro/05.BF8jK7mQ_W2F9p.webp (reused cache entry) (+4ms) (22/107)
+00:28:23   ▶ /_astro/06.B8pOeqdZ_Z1gHefU.webp (reused cache entry) (+4ms) (23/107)
+00:28:23   ▶ /_astro/08.Cx3vfV0K_ZrQwsI.webp (reused cache entry) (+4ms) (24/107)
+00:28:23   ▶ /_astro/10.qDgyaknF_Z1xheV8.webp (reused cache entry) (+3ms) (25/107)
+00:28:23   ▶ /_astro/09.C_kFNYQQ_255EFI.webp (reused cache entry) (+4ms) (26/107)
+00:28:23   ▶ /_astro/11.CGjeLCbq_2339jX.webp (reused cache entry) (+4ms) (27/107)
+00:28:23   ▶ /_astro/12.D66p-sSb_264bn2.webp (reused cache entry) (+4ms) (28/107)
+00:28:23   ▶ /_astro/13.D-u35XCL_Z1DXXDk.webp (reused cache entry) (+4ms) (29/107)
+00:28:23   ▶ /_astro/14.CdNm4vzs_1eN1CJ.webp (reused cache entry) (+4ms) (30/107)
+00:28:23   ▶ /_astro/15.DuQrUnoG_9eAvf.webp (reused cache entry) (+4ms) (31/107)
+00:28:23   ▶ /_astro/16.DzqXkVt0_Z1ESCw0.webp (reused cache entry) (+4ms) (32/107)
+00:28:23   ▶ /_astro/17.CfwTVaT-_2uCXBo.webp (reused cache entry) (+4ms) (33/107)
+00:28:23   ▶ /_astro/cali.D0eWKSr7_Z21G0Wb.webp (reused cache entry) (+4ms) (34/107)
+00:28:23   ▶ /_astro/onur-dev-2.EKRqHfbR_Z1SpsLl.webp (reused cache entry) (+3ms) (35/107)
+00:28:23   ▶ /_astro/onur-dev._2l7YmU9_qIehd.webp (reused cache entry) (+3ms) (36/107)
+00:28:23   ▶ /_astro/nareshkhatri.C7OExEDY_Z1mXsBb.webp (reused cache entry) (+3ms) (37/107)
+00:28:23   ▶ /_astro/sudip.DQnanvAb_Z21kyLa.webp (reused cache entry) (+3ms) (38/107)
+00:28:23   ▶ /_astro/sudip2.DSKBvr2s_ZNaIAz.webp (reused cache entry) (+3ms) (39/107)
+00:28:23   ▶ /_astro/thoughtlite-1.DhgaEtr0_Z2lrqKM.webp (reused cache entry) (+3ms) (40/107)
+00:28:23   ▶ /_astro/thoughtlite-2.DEw15_Z-_ZLhFJ4.webp (reused cache entry) (+3ms) (41/107)
+00:28:23   ▶ /_astro/001.bY83qvcz_8hdTi.webp (reused cache entry) (+3ms) (42/107)
+00:28:23   ▶ /_astro/003.DGMqk6iD_Z20OEJr.webp (reused cache entry) (+3ms) (43/107)
+00:28:23   ▶ /_astro/004.BBkC5iNw_Z27QMwc.webp (reused cache entry) (+3ms) (44/107)
+00:28:23   ▶ /_astro/005.a7nOHJiP_Z1s3I2v.webp (reused cache entry) (+3ms) (45/107)
+00:28:23   ▶ /_astro/007.Bjkk2N2g_Z1TALgV.webp (reused cache entry) (+3ms) (46/107)
+00:28:23   ▶ /_astro/006.Bk9EHH4f_qeCe9.webp (reused cache entry) (+3ms) (47/107)
+00:28:23   ▶ /_astro/008.CQ_7vF_o_1cK1qC.webp (reused cache entry) (+3ms) (48/107)
+00:28:23   ▶ /_astro/010._fWbYmCd_2oPDhV.webp (reused cache entry) (+4ms) (49/107)
+00:28:23   ▶ /_astro/009.DNQjOAo0_1TTDfo.webp (reused cache entry) (+4ms) (50/107)
+00:28:23   ▶ /_astro/011.DUo75anh_Z2cHJIt.webp (reused cache entry) (+4ms) (51/107)
+00:28:23   ▶ /_astro/012.1kyEiLjg_oenb1.webp (reused cache entry) (+4ms) (52/107)
+00:28:23   ▶ /_astro/013.plQUJHM__Z1fC7kz.webp (reused cache entry) (+4ms) (53/107)
+00:28:23   ▶ /_astro/014.Do3-R69y_rqnrJ.webp (reused cache entry) (+4ms) (54/107)
+00:28:23   ▶ /_astro/015.DspKGJf9_1o7Wjp.webp (reused cache entry) (+4ms) (55/107)
+00:28:23   ▶ /_astro/016.3S8XTCKB_KnEyQ.webp (reused cache entry) (+4ms) (56/107)
+00:28:23   ▶ /_astro/017.B3R34xQs_Z1HuhA1.webp (reused cache entry) (+4ms) (57/107)
+00:28:23   ▶ /_astro/01.Cvisowr2_2wTVeU.webp (reused cache entry) (+4ms) (58/107)
+00:28:23   ▶ /_astro/02.BNFJhV_h_Z42cmp.webp (reused cache entry) (+4ms) (59/107)
+00:28:23   ▶ /_astro/kaskadproject.DDGN8Y1t_1nWE7A.webp (reused cache entry) (+4ms) (60/107)
+00:28:23   ▶ /_astro/namespace.BJcgG--e_Z2diNvm.webp (reused cache entry) (+4ms) (61/107)
+00:28:23   ▶ /_astro/studio-job.CGvHzcK6_Zl1g31.webp (reused cache entry) (+3ms) (62/107)
+00:28:23   ▶ /_astro/wiki.BJUvQPko_Z1vCmtt.webp (reused cache entry) (+4ms) (63/107)
+00:28:23   ▶ /_astro/src-plus.B_GkV0vl_ZEksia.webp (reused cache entry) (+3ms) (64/107)
+00:28:23   ▶ /_astro/awwwards.BkUZP2P7_Z1jJ2JF.webp (reused cache entry) (+4ms) (65/107)
+00:28:23   ▶ /_astro/brutalistwebsites.n4qiwaxq_Z2rHMMn.webp (reused cache entry) (+4ms) (66/107)
+00:28:23   ▶ /_astro/001-ricoog.Cg3sRHUJ_z6XPH.webp (reused cache entry) (+4ms) (67/107)
+00:28:23   ▶ /_astro/002-gradientshub.CYeAeXpF_2jRaaA.webp (reused cache entry) (+4ms) (68/107)
+00:28:23   ▶ /_astro/003-freegradient.Vz7xsyJm_ZB6vYe.webp (reused cache entry) (+4ms) (69/107)
+00:28:23   ▶ /_astro/004-text-generator.7X_QecHF_1kgLxs.webp (reused cache entry) (+4ms) (70/107)
+00:28:23   ▶ /_astro/006-color-palette-generator.7liY5b1X_FvinY.webp (reused cache entry) (+3ms) (71/107)
+00:28:23   ▶ /_astro/005-multi-color.DNKEOnmz_1ndPmn.webp (reused cache entry) (+4ms) (72/107)
+00:28:23   ▶ /_astro/007-inspowebcom.9Satcjsm_1iB39I.webp (reused cache entry) (+3ms) (73/107)
+00:28:23   ▶ /_astro/008-inspowebcom.DJy-0cwx_Z2os331.webp (reused cache entry) (+4ms) (74/107)
+00:28:23   ▶ /_astro/009-uiuxdeck_com.B_EWgEVc_CUXm1.webp (reused cache entry) (+4ms) (75/107)
+00:28:23   ▶ /_astro/010-ricoui-com.COKE4ZK0_Z4Ojda.webp (reused cache entry) (+4ms) (76/107)
+00:28:23   ▶ /_astro/011-ricoui-com.C4d_jGgS_IIOKD.webp (reused cache entry) (+4ms) (77/107)
+00:28:23   ▶ /_astro/012-todolist.DgtrwDdW_rjXOc.webp (reused cache entry) (+4ms) (78/107)
+00:28:23   ▶ /_astro/013-valentine3d-figma.D2FSWbJN_ZjeE9R.webp (reused cache entry) (+4ms) (79/107)
+00:28:23   ▶ /_astro/014-valentine-landing.CK8Wl1DJ_2tpG0A.webp (reused cache entry) (+4ms) (80/107)
+00:28:23   ▶ /_astro/001.Cj8dpR-u_fnQ8k.webp (reused cache entry) (+4ms) (81/107)
+00:28:23   ▶ /_astro/002-a-collection-of-my-best-starfield.CvTa6gdI_1jG3al.webp (reused cache entry) (+4ms) (82/107)
+00:28:23   ▶ /_astro/003.jFYBw7Kp_Z1o0o3t.webp (reused cache entry) (+3ms) (83/107)
+00:28:23   ▶ /_astro/004-2001.BB9qe18N_Z1LdOm1.webp (reused cache entry) (+3ms) (84/107)
+00:28:23   ▶ /_astro/005-2001.BgyiCAju_Z1tMpmY.webp (reused cache entry) (+3ms) (85/107)
+00:28:23   ▶ /_astro/006-Starship-Troopers.BFng12UP_vUhN4.webp (reused cache entry) (+4ms) (86/107)
+00:28:23   ▶ /_astro/007-Serenity.BGgm_vbF_2lKsrV.webp (reused cache entry) (+4ms) (87/107)
+00:28:23   ▶ /_astro/008-starfield-game-art.CCjUUIeN_RWSxa.webp (reused cache entry) (+4ms) (88/107)
+00:28:23   ▶ /_astro/009-alien-isolation.B9rOMR0-_137cx0.webp (reused cache entry) (+4ms) (89/107)
+00:28:23   ▶ /_astro/010-Space-Sweepers.D735G9r3_ZyEBmw.webp (reused cache entry) (+4ms) (90/107)
+00:28:23   ▶ /_astro/011-Guardians-of-the-Galaxy.DcC5Cp4J_UTHhp.webp (reused cache entry) (+4ms) (91/107)
+00:28:23   ▶ /_astro/01-freesvgicons.C0PZAPGD_1Hepa8.webp (reused cache entry) (+3ms) (92/107)
+00:28:23   ▶ /_astro/02-iconsax.pV_GZ4jt_ZBYtDb.webp (reused cache entry) (+3ms) (93/107)
+00:28:23   ▶ /_astro/03-mageicons.D-h6c6v6_1Or1Ns.webp (reused cache entry) (+3ms) (94/107)
+00:28:23   ▶ /_astro/04-remixicon._5OyBk3E_Z1neRlq.webp (reused cache entry) (+3ms) (95/107)
+00:28:23   ▶ /_astro/05-lucide.ge2_mEbd_zv67C.webp (reused cache entry) (+3ms) (96/107)
+00:28:23   ▶ /_astro/06-akar.Bwl6YGku_ZcmnO0.webp (reused cache entry) (+3ms) (97/107)
+00:28:23   ▶ /_astro/07-qingicon.BmtzBkxq_ZkEvEi.webp (reused cache entry) (+4ms) (98/107)
+00:28:23   ▶ /_astro/08-circumicons.BADHHVD3_2hziYh.webp (reused cache entry) (+4ms) (99/107)
+00:28:23   ▶ /_astro/09-heroicons.DMg-VS0W_USkBh.webp (reused cache entry) (+4ms) (100/107)
+00:28:23   ▶ /_astro/10-boxicons.CDpocPkZ_L5XQ6.webp (reused cache entry) (+4ms) (101/107)
+00:28:23   ▶ /_astro/11-grassicons.B6TNhlXU_22CasA.webp (reused cache entry) (+4ms) (102/107)
+00:28:23   ▶ /_astro/12-isocons-app.BLFyCNYm_1RaIKw.webp (reused cache entry) (+4ms) (103/107)
+00:28:23   ▶ /_astro/13-iconoir.DFspcAVT_Z1iTyej.webp (reused cache entry) (+4ms) (104/107)
+00:28:23   ▶ /_astro/14-doodle-icons.Bc1e1e7F_Z1ldsIH.webp (reused cache entry) (+3ms) (105/107)
+00:28:23   ▶ /_astro/uiuxdeck-icons.DBcXtGXK_Z2oaIec.webp (reused cache entry) (+3ms) (106/107)
+00:28:23   ▶ /_astro/uiuxdeck.Bs_UA4j2_ZQPRU6.webp (reused cache entry) (+3ms) (107/107)
+00:28:23 ✓ Completed in 45ms.
+00:28:23 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+00:28:23 [build] 15 page(s) built in 4.71s
+00:28:23 [build] Complete!
